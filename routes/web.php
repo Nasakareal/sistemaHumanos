@@ -20,6 +20,7 @@ Route::get('/scan', function () {
     return view('scan.scan_qr');
 })->middleware('auth')->name('scan.qr');
 
+
 // Rutas para Empleados
 Route::prefix('empleados')->middleware('auth')->group(function () {
     Route::get('/', [App\Http\Controllers\EmpleadoController::class, 'index'])->name('empleados.index');
@@ -29,30 +30,35 @@ Route::prefix('empleados')->middleware('auth')->group(function () {
     Route::get('/{empleado}/edit', [App\Http\Controllers\EmpleadoController::class, 'edit'])->middleware('can:editar empleados')->name('empleados.edit');
     Route::put('/{empleado}', [App\Http\Controllers\EmpleadoController::class, 'update'])->middleware('can:editar empleados')->name('empleados.update');
     Route::delete('/{empleado}', [App\Http\Controllers\EmpleadoController::class, 'destroy'])->middleware('can:eliminar empleados')->name('empleados.destroy');
+    Route::get('/{empleado}/asignar-tarjeta', [App\Http\Controllers\EmpleadoController::class, 'formAsignarTarjeta'])->middleware('can:editar empleados')->name('empleados.asignarTarjeta');
+    Route::post('/{empleado}/guardar-tarjeta', [App\Http\Controllers\EmpleadoController::class, 'guardarTarjeta'])->middleware('can:editar empleados')->name('empleados.guardarTarjeta');
 });
 
 
+
 // Rutas para Empleados
 Route::prefix('empleados')->middleware('auth')->group(function () {
-    Route::get('/', [App\Http\Controllers\EmpleadoController::class, 'index'])->name('empleados.index');
+    Route::get('/',   [App\Http\Controllers\EmpleadoController::class, 'index'])->name('empleados.index');
     Route::get('/create', [App\Http\Controllers\EmpleadoController::class, 'create'])->middleware('can:crear empleados')->name('empleados.create');
-    Route::post('/', [App\Http\Controllers\EmpleadoController::class, 'store'])->middleware('can:crear empleados')->name('empleados.store');
+    Route::post('/',  [App\Http\Controllers\EmpleadoController::class, 'store'])->middleware('can:crear empleados')->name('empleados.store');
     Route::get('/{empleado}', [App\Http\Controllers\EmpleadoController::class, 'show'])->middleware('can:ver empleados')->name('empleados.show');
-    Route::get('/{empleado}/edit', [App\Http\Controllers\EmpleadoController::class, 'edit'])->middleware('can:editar empleados')->name('empleados.edit');
-    Route::put('/{empleado}', [App\Http\Controllers\EmpleadoController::class, 'update'])->middleware('can:editar empleados')->name('empleados.update');
-    Route::delete('/{empleado}', [App\Http\Controllers\EmpleadoController::class, 'destroy'])->middleware('can:eliminar empleados')->name('empleados.destroy');
+    Route::get('/{empleado}/edit',   [App\Http\Controllers\EmpleadoController::class, 'edit'])->middleware('can:editar empleados')->name('empleados.edit');
+    Route::put('/{empleado}',        [App\Http\Controllers\EmpleadoController::class, 'update'])->middleware('can:editar empleados')->name('empleados.update');
+    Route::delete('/{empleado}',     [App\Http\Controllers\EmpleadoController::class, 'destroy'])->middleware('can:eliminar empleados')->name('empleados.destroy');
+    Route::get('/{empleado}/asignar-rfid',    [App\Http\Controllers\EmpleadoController::class, 'formAsignarTarjeta'])->middleware('can:editar empleados')->name('empleados.asignar_rfid');
+    Route::post('/{empleado}/guardar-rfid',   [App\Http\Controllers\EmpleadoController::class, 'guardarTarjeta'])->middleware('can:editar empleados')->name('empleados.guardar_rfid');
 
-    // Rutas anidadas: Documentos por Empleado
     Route::prefix('{empleado}/documentos')->group(function () {
-        Route::get('/', [App\Http\Controllers\DocumentoController::class, 'index'])->name('documentos.index');
-        Route::get('/create', [App\Http\Controllers\DocumentoController::class, 'create'])->name('documentos.create');
-        Route::post('/', [App\Http\Controllers\DocumentoController::class, 'store'])->name('documentos.store');
+        Route::get('/',          [App\Http\Controllers\DocumentoController::class, 'index'])->name('documentos.index');
+        Route::get('/create',    [App\Http\Controllers\DocumentoController::class, 'create'])->name('documentos.create');
+        Route::post('/',         [App\Http\Controllers\DocumentoController::class, 'store'])->name('documentos.store');
         Route::get('/{documento}/edit', [App\Http\Controllers\DocumentoController::class, 'edit'])->name('documentos.edit');
-        Route::put('/{documento}', [App\Http\Controllers\DocumentoController::class, 'update'])->name('documentos.update');
-        Route::delete('/{documento}', [App\Http\Controllers\DocumentoController::class, 'destroy'])->name('documentos.destroy');
+        Route::put('/{documento}',      [App\Http\Controllers\DocumentoController::class, 'update'])->name('documentos.update');
+        Route::delete('/{documento}',   [App\Http\Controllers\DocumentoController::class, 'destroy'])->name('documentos.destroy');
         Route::get('/{documento}/descargar', [App\Http\Controllers\DocumentoController::class, 'descargar'])->name('documentos.descargar');
     });
 });
+
 
 // Rutas para Requisiciones
 Route::prefix('requisiciones')->middleware('auth')->group(function () {

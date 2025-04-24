@@ -60,38 +60,51 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($empleados as $emp)
-                        <tr>
-                            <td>{{ $emp->id }}</td>
-                            <td>{{ $emp->nombre }}</td>
-                            <td>{{ $emp->puesto }}</td>
-                            <td>{{ $emp->area_adscripcion }}</td>
-                            <td>{{ $emp->correo_electronico }}</td>
-                            <td>{{ $emp->fecha_nacimiento ? \Carbon\Carbon::parse($emp->fecha_nacimiento)->format('d-m-Y') : '' }}</td>
-                            <td>{{ $emp->fecha_ingreso ? \Carbon\Carbon::parse($emp->fecha_ingreso)->format('d-m-Y') : '' }}</td>
-                            <td class="noExport">
-                                <div class="btn-group" role="group">
-                                    <a href="{{ route('empleados.show', $emp->id) }}" class="btn btn-info btn-sm" title="Ver empleado">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </a>
-                                    <a href="{{ route('empleados.edit', $emp->id) }}" class="btn btn-success btn-sm" title="Editar empleado">
-                                        <i class="fa-regular fa-pen-to-square"></i>
-                                    </a>
-                                    <a href="{{ route('documentos.index', $emp->id) }}" class="btn btn-warning btn-sm" title="Ver documentos">
-                                        <i class="fa-solid fa-folder-open"></i>
-                                    </a>
-                                    <form action="{{ route('empleados.destroy', $emp->id) }}" method="POST" style="display:inline-block;">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="button" class="btn btn-danger btn-sm delete-btn" title="Eliminar empleado">
-                                            <i class="fa-regular fa-trash-can"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
-                    @endforeach
-                </tbody>
+    @foreach ($empleados as $emp)
+        <tr>
+            <td>{{ $emp->id }}</td>
+            <td>{{ $emp->nombre }}</td>
+            <td>{{ $emp->puesto }}</td>
+            <td>{{ $emp->area_adscripcion }}</td>
+            <td>{{ $emp->correo_electronico }}</td>
+            <td>{{ $emp->fecha_nacimiento ? \Carbon\Carbon::parse($emp->fecha_nacimiento)->format('d-m-Y') : '' }}</td>
+            <td>{{ $emp->fecha_ingreso ? \Carbon\Carbon::parse($emp->fecha_ingreso)->format('d-m-Y') : '' }}</td>
+            <td class="noExport">
+                <div class="btn-group" role="group">
+                    <!-- Ver -->
+                    <a href="{{ route('empleados.show', $emp->id) }}" class="btn btn-info btn-sm" title="Ver empleado">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+
+                    <!-- Editar -->
+                    <a href="{{ route('empleados.edit', $emp->id) }}" class="btn btn-success btn-sm" title="Editar empleado">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </a>
+
+                    <!-- Documentos -->
+                    <a href="{{ route('documentos.index', $emp->id) }}" class="btn btn-warning btn-sm" title="Ver documentos">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </a>
+
+                    <!-- Asignar RFID -->
+                    <a href="{{ route('empleados.asignar_rfid', $emp->id) }}" class="btn btn-primary btn-sm" title="Asignar tarjeta RFID">
+                        <i class="fa-solid fa-id-badge"></i>
+                    </a>
+
+                    <!-- Eliminar -->
+                    <form action="{{ route('empleados.destroy', $emp->id) }}" method="POST" style="display:inline-block;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="button" class="btn btn-danger btn-sm delete-btn" title="Eliminar empleado">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    @endforeach
+</tbody>
+
             </table>
         </div>
     </div>

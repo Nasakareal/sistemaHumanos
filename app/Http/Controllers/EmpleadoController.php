@@ -140,4 +140,25 @@ class EmpleadoController extends Controller
 
         return redirect()->route('empleados.index')->with('success', 'Empleado eliminado exitosamente.');
     }
+
+    // Mostrar formulario para asignar tarjeta RFID
+    public function formAsignarTarjeta(Empleado $empleado)
+    {
+        return view('empleados.asignar_rfid', compact('empleado'));
+    }
+
+    // Guardar el UID de la tarjeta RFID en la base de datos
+    public function guardarTarjeta(Request $request, Empleado $empleado)
+    {
+        $request->validate([
+            'rfid_uid' => 'required|string|max:255|unique:empleados,rfid_uid,' . $empleado->id,
+        ]);
+
+        $empleado->update([
+            'rfid_uid' => strtoupper($request->input('rfid_uid')),
+        ]);
+
+        return redirect()->route('empleados.show', $empleado)
+            ->with('success', 'Tarjeta RFID asignada correctamente.');
+    }
 }

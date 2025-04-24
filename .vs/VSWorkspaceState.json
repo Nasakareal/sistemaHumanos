@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\config"
+    "\\app",
+    "\\app\\Models",
+    "\\public",
+    "\\resources",
+    "\\resources\\views",
+    "\\resources\\views\\empleados",
+    "\\routes"
   ],
-  "SelectedNode": "\\config\\adminlte.php",
+  "SelectedNode": "\\app\\Models\\Empleado.php",
   "PreviewInSolutionExplorer": false
 }

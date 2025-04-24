@@ -64,6 +64,7 @@ class Empleado extends Model
         'otra_dependencia',
         'otro_trabajo_horario',
         'otro_trabajo_puesto',
+        'rfid_uid',
     ];
 
     public function getActivitylogOptions(): LogOptions

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\wamp64\\www\\sistemaHumanos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\sistemaHumanos\\config\\adminlte.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:config\\adminlte.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\sistemaHumanos\\resources\\views\\empleados\\index.blade.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\views\\empleados\\index.blade.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\sistemaHumanos\\app\\Http\\Controllers\\EmpleadoController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\EmpleadoController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\sistemaHumanos\\resources\\views\\empleados\\asignar_rfid.blade.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\views\\empleados\\asignar_rfid.blade.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\sistemaHumanos\\routes\\web.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\web.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "adminlte.php",
-              "DocumentMoniker": "C:\\wamp64\\www\\sistemaHumanos\\config\\adminlte.php",
-              "RelativeDocumentMoniker": "config\\adminlte.php",
-              "ToolTip": "C:\\wamp64\\www\\sistemaHumanos\\config\\adminlte.php",
-              "RelativeToolTip": "config\\adminlte.php",
-              "ViewState": "AgIAAKIBAAAAAAAAAAAYwNQBAAAjAAAAAAAAAA==",
+              "Title": "index.blade.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\sistemaHumanos\\resources\\views\\empleados\\index.blade.php",
+              "RelativeDocumentMoniker": "resources\\views\\empleados\\index.blade.php",
+              "ToolTip": "C:\\wamp64\\www\\sistemaHumanos\\resources\\views\\empleados\\index.blade.php",
+              "RelativeToolTip": "resources\\views\\empleados\\index.blade.php",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowFsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
-              "WhenOpened": "2025-04-08T06:55:24.155Z",
+              "WhenOpened": "2025-04-24T20:55:59.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "asignar_rfid.blade.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\sistemaHumanos\\resources\\views\\empleados\\asignar_rfid.blade.php",
+              "RelativeDocumentMoniker": "resources\\views\\empleados\\asignar_rfid.blade.php",
+              "ToolTip": "C:\\wamp64\\www\\sistemaHumanos\\resources\\views\\empleados\\asignar_rfid.blade.php",
+              "RelativeToolTip": "resources\\views\\empleados\\asignar_rfid.blade.php",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-04-24T20:55:43.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpleadoController.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\sistemaHumanos\\app\\Http\\Controllers\\EmpleadoController.php",
+              "RelativeDocumentMoniker": "app\\Http\\Controllers\\EmpleadoController.php",
+              "ToolTip": "C:\\wamp64\\www\\sistemaHumanos\\app\\Http\\Controllers\\EmpleadoController.php",
+              "RelativeToolTip": "app\\Http\\Controllers\\EmpleadoController.php",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowJEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-04-24T17:07:52.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "web.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\sistemaHumanos\\routes\\web.php",
+              "RelativeDocumentMoniker": "routes\\web.php",
+              "ToolTip": "C:\\wamp64\\www\\sistemaHumanos\\routes\\web.php",
+              "RelativeToolTip": "routes\\web.php",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2025-04-24T00:03:34.18Z",
               "EditorCaption": ""
             }
           ]

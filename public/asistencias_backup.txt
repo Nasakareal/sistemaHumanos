@@ -1,0 +1,199 @@
+🧪 SÍ entra a puente.php
+🧪 Entró desde: 192.168.1.14 | Método: GET
+🕒 2025-04-24 02:08:36
+🔵 Método: GET
+🌐 IP: 192.168.1.14
+📩 POST: Array
+(
+)
+
+📦 RAW: 
+=========================
+🕒 2025-04-24 02:10:40
+🔵 Método: GET
+🌐 IP: 192.168.1.18
+📩 POST: Array
+(
+)
+
+📦 RAW: 
+=========================
+🕒 2025-04-24 02:10:45
+🔵 Método: POST
+🌐 IP: 192.168.1.17
+📩 POST: Array
+(
+    [uid] => 1AF38FDD
+    [tipo] => entrada
+)
+
+📦 RAW: uid=1AF38FDD&tipo=entrada
+=========================
+🕒 2025-04-24 02:18:18
+🔵 Método: POST
+🌐 IP: 192.168.1.17
+📩 POST: Array
+(
+    [uid] => 1AF38FDD
+    [tipo] => entrada
+)
+
+📦 RAW: uid=1AF38FDD&tipo=entrada
+=========================
+🕒 2025-04-24 02:25:58
+🔵 Método: POST
+🌐 IP: 192.168.1.17
+📩 POST: Array
+(
+    [uid] => 1AF38FDD
+    [tipo] => entrada
+)
+
+📦 RAW: uid=1AF38FDD&tipo=entrada
+=========================
+🕒 2025-04-24 02:26:19
+🔵 Método: POST
+🌐 IP: 192.168.1.17
+📩 POST: Array
+(
+    [uid] => 1AF38FDD
+    [tipo] => entrada
+)
+
+📦 RAW: uid=1AF38FDD&tipo=entrada
+=========================
+🕒 2025-04-24 02:27:17
+🔵 Método: POST
+🌐 IP: 192.168.1.17
+📩 POST: Array
+(
+    [uid] => 1AF38FDD
+    [tipo] => entrada
+)
+
+📦 RAW: uid=1AF38FDD&tipo=entrada
+=========================
+🕒 2025-04-24 02:28:27
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 02:29:10
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 02:30:53
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 02:31:05
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 02:42:09
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 02:42:21
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 02:42:27
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 03:46:09
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 03:46:15
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 03:46:26
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 03:46:31
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 04:31:39
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 04:31:44
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 04:31:53
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 17:12:11
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 17:12:36
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 17:12:42
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 17:12:49
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 17:12:57
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 20:56:25
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 20:56:35
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 20:56:43
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 21:23:50
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:05:02
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:05:15
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:05:22
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:05:37
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:07:05
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:07:16
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:07:23
+🔴 UID: 1AF38FDD
+📩 Tipo: entrada
+
+🕒 2025-04-24 22:07:30
+🔴 UID: 6F9F82
+📩 Tipo: entrada
+

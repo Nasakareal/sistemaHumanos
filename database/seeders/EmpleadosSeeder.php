@@ -56,6 +56,7 @@ class EmpleadosSeeder extends Seeder
                 'otro_trabajo_horario' => null,
                 'otro_trabajo_puesto' => null,
 
+                'rfid_uid' => '1AF38FDD', // ✅ Aquí el UID autorizado
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
@@ -104,6 +105,7 @@ class EmpleadosSeeder extends Seeder
                 'otro_trabajo_horario' => 'Lunes a Viernes, de 8:00 a 14:00',
                 'otro_trabajo_puesto' => 'Asesora externa',
 
+                'rfid_uid' => null, // ❌ No tiene tarjeta autorizada
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
