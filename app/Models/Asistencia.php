@@ -15,5 +15,12 @@ class Asistencia extends Model
         'hora_entrada',
         'hora_salida',
         'estado',
+        'observaciones',
     ];
+
+    public function empleado()
+    {
+        return $this->belongsTo(Empleado::class);
+    }
+
 }

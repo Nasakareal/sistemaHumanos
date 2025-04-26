@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     file_put_contents("uid_temp.txt", $uid);
 
     // Reenvía a Laravel
-    $ch = curl_init('http://localhost/sistemaHumanos/public/api/asistencia');
+    $ch = curl_init('https://utmorelia.com/sistemaHumanos/api/asistencia');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([

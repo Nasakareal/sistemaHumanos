@@ -20,6 +20,19 @@ Route::get('/scan', function () {
     return view('scan.scan_qr');
 })->middleware('auth')->name('scan.qr');
 
+// Rutas para Asistencias
+Route::prefix('asistencias')->middleware('auth')->group(function () {
+    Route::get('/', [App\Http\Controllers\AsistenciaController::class, 'index'])->name('asistencias.index');
+    Route::get('/create', [App\Http\Controllers\AsistenciaController::class, 'create'])->middleware('can:crear asistencias')->name('asistencias.create');
+    Route::post('/', [App\Http\Controllers\AsistenciaController::class, 'store'])->middleware('can:crear asistencias')->name('asistencias.store');
+    Route::get('/{asistencia}', [App\Http\Controllers\AsistenciaController::class, 'show'])->middleware('can:ver asistencias')->name('asistencias.show');
+    Route::get('/{asistencia}/edit', [App\Http\Controllers\AsistenciaController::class, 'edit'])->middleware('can:editar asistencias')->name('asistencias.edit');
+    Route::put('/{asistencia}', [App\Http\Controllers\AsistenciaController::class, 'update'])->middleware('can:editar asistencias')->name('asistencias.update');
+    Route::delete('/{asistencia}', [App\Http\Controllers\AsistenciaController::class, 'destroy'])->middleware('can:eliminar asistencias')->name('asistencias.destroy');
+    Route::get('/{asistencia}/asignar-tarjeta', [App\Http\Controllers\AsistenciaController::class, 'formAsignarTarjeta'])->middleware('can:editar asistencias')->name('asistencias.asignarTarjeta');
+    Route::post('/{asistencia}/guardar-tarjeta', [App\Http\Controllers\AsistenciaController::class, 'guardarTarjeta'])->middleware('can:editar asistencias')->name('asistencias.guardarTarjeta');
+});
+
 
 // Rutas para Empleados
 Route::prefix('empleados')->middleware('auth')->group(function () {

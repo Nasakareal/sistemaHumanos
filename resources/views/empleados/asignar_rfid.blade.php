@@ -46,7 +46,7 @@
 
 @section('css')
     <style>
-        /* Aquí puedes añadir estilos adicionales si los necesitas */
+        /* */
     </style>
 @stop
 
@@ -54,7 +54,7 @@
 <script>
     // Consulta UID del archivo puente cada segundo
     setInterval(() => {
-        fetch('/sistemaHumanos/public/puente.php')
+        fetch('/sistemaHumanos/puente.php')
             .then(res => res.text())
             .then(uid => {
                 if (uid.trim() !== '') {

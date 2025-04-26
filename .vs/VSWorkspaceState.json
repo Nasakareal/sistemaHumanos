@@ -2,13 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
+    "\\app\\Http\\Controllers\\Api",
     "\\app\\Models",
-    "\\public",
+    "\\database",
+    "\\database\\seeders",
     "\\resources",
     "\\resources\\views",
-    "\\resources\\views\\empleados",
-    "\\routes"
+    "\\resources\\views\\asistencias"
   ],
-  "SelectedNode": "\\app\\Models\\Empleado.php",
+  "SelectedNode": "\\resources\\views\\asistencias\\index.blade.php",
   "PreviewInSolutionExplorer": false
 }
